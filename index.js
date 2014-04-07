@@ -49,7 +49,10 @@ AuthResource.prototype.handle = function (ctx, next) {
         dpd.users.get({username: username}, function(users, err) {
             console.log(users);
 
-            if(!users || !users.length) return sendResponse(ctx, true);
+            if(!users || !users.length) {
+                // we don't want to expose that a certain user is in our db (or not), so we just return success here.
+                return ctx.done(null, 'You will receive instructions via email.');
+            }
             var user = users[0];
             
             // set a resetToken
