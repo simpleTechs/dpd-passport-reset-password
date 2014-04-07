@@ -121,6 +121,6 @@ AuthResource.prototype.handle = function (ctx, next) {
         });
     } else {
         // handover to original module
-        return _handle.call(AuthResource.prototype, arguments);
+        return _handle.apply(this, arguments);
     }
 }
