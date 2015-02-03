@@ -1,6 +1,6 @@
 {
   "name": "dpd-passport-password-reset",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "An extension for dpd-passport, that integrates password-reset functionality",
   "main": "index.js",
   "scripts": {
@@ -8,10 +8,11 @@
   },
   "keywords": [
     "deployd",
-    "dpd-passport"
+    "dpd-passport",
+    "password-reset"
   ],
   "author": "Fabian Off, simpleTechs.net <fabian@simpletechs.net>",
-  "license": "ISC",
+  "license": "FreeBSD",
   "dependencies": {
 
   }
